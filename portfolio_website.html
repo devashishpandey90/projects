@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEV PORTFOLIO SITE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Work+Sans:ital,wght@0,100;0,200;0,400;1,100;1,200&display=swap" rel="stylesheet">
+    <style>
+        body
+        {
+            background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+            font-family: "work Sans",sans-serif;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        h1,h2,h3
+        {
+            font-family: "Days one"sans-serif;
+        }
+        nav
+        {
+            display: flex;
+            background-color: #ff8a33;
+            justify-content: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+
+        }
+        nav ul
+        {
+            display: flex;
+            align-items: center;
+            padding: 0 10%;
+            list-style: none;
+        }
+        nav ul li a
+        {
+            font-size:16px ;
+            padding: 0 15px;
+            color: white;
+            transition: 0.2s;
+            text-transform: uppercase;
+
+        }
+        nav ul li a:hover
+        {
+            transition: 0.2s;
+            color: #4F33FF;
+        }
+        .container
+        {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .hero
+        {
+            padding-top: 150px;
+
+        }
+        .hero img
+        {
+            border-style: none;
+            border-radius: 50%;
+            margin: 0 auto;
+            max-width: 440px;
+            display: block;
+        }
+        h1
+        {
+            color: black;
+            text-align: center;
+            font-size: 24px;
+            margin: 30px 0px 100px;
+        }
+        .aboutme
+        {
+            width: 90px;
+            max-width: 1100px;
+            height: auto;
+            background-color: blue;
+            text-align: center;
+            padding: 40px 50px 70px;
+            margin: 0 auto;
+        }
+        .aboutme-section
+        {
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: wrap;
+
+        }
+        .aboutme-image
+        {
+            height:450px ;
+            width: 400px; ;
+            background-image: url("AnyConv.com__img.dev.jpeg.jpeg");
+            background-size:cover ;
+            background-position:center ;
+
+        }
+        .aboutme-text
+        {
+            height: auto;
+            width: 40%;
+            margin-left: 40px ;
+            text-align: left ;
+        }
+        #project
+        {
+            padding: 5px;
+            margin: 5px;
+            width: 90%;
+            height: auto;
+            text-align: center;
+        }
+        .projects
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: wrap;
+        }
+        #projects
+        {
+            color: red;
+        }
+        .earth-project
+        {
+            width:400px ;
+            height: 400px;
+            background:white ;
+            position: relative;    
+            border-radius:10px ;
+            background-image:url("Shivaji_British_Museum (2)");
+            margin: 20px;
+            background-size:cover ;
+            background-position: center;
+        }
+        .text
+        {
+            position: absolute;
+            height:5% ;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            z-index:2 ;
+            background-color: blueviolet;
+            overflow: hidden;
+            transition: 0.2s;
+            padding:20px;
+
+        }
+        .text h3
+        {
+            margin-top: 3px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li> <a href="#about me">about me</a></li>
+            <li> <a href="#project">project</a></li>
+            <li> <a href="#contact me">contact me</a></li>
+
+        </ul>
+    </nav>
+    <section class="hero">
+       <div class="container">
+        <img src="AnyConv.com__img.dev.jpeg.jpeg">
+        <h1> <B> IAM DEVASHISH PANDEY 
+            STUDENT OF BTECH CSE</B>
+        </h1>
+
+       </div>
+    </section>
+    <section id = "about me" class="a">
+        <h2> About me </h2>
+        <div class="about me - section">
+            <div class="img"></div>
+                <div class ="aboutme-image"></div>
+            <div class="aboutme-text"></div>
+            <p> Iam a student of btech cse at amity university gwalior mp .
+                Iam in a second year .In first year I learn C, C++ and some OOPS concept 
+                now iam start learning the  WEB DEVELOPMENT for project and strong the some skill.</p>
+
+                <p> I also start learning the JAVA because java is extremly used in backend development
+                Let me tell you some more about me .Iam from banda uttarpradesh I live in hostel h1 
+                I complete my school from banda shanti dham school </p>
+
+                <p>Now iam familer with HTML and complete some portion with CSS also. HTML help to build frontend skill also iam familer with  MACHINE LEARNING like PANDAS, NUMPY and many others library also MYSQL.</p>
+             
+        </div>
+    </section>
+    <section id = "projects">
+        <div class="Projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="about shivaji- project">
+                    <div id="text">
+                         <h3 class="project-name"> ABOUT SHIVAJI </h3>
+                         <div class="content">
+                            <P>HERE SOME FACTS ABOUT GREAT SHIVA JI</P>
+                           <a class="buttons" href="HTML/complete_web_deveelopment/CSS_HTML/all_in_one.html" target="_bank"> view project</a>
+                         </div>
+                    </div>
+                </div>
+                 
+
+            </div>
+        </div> 
+    </section>
+</body>
+</html>
